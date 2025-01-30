@@ -23,9 +23,9 @@ Taking into account what was proposed, it was obtained a database that contains 
 - each Chemical Formula and a column for additional information, all that with the corresponding units.
 It was also created a database containing the list of T-atoms for each zeolite.
 
-For the searching part of the process, I mainly resorted to two methods: using the the Pandas library or the BeautifulSoup one.
-The first method uses the code "pd.read_html" and searches for all the HTML code of the page defined with the <table> tag (HTML tables), transforming the information taken from these tables into a pandas DataFrame.
-The second method turned out to be a bit more complex, however essential when the information of interest was not found within a <table> tag. Recurring to the code "requests.get" from requests library, it was obtained the entire HTML code of the page through an HTTP request to the web server. After that, it was possible to use the BeautifulSoup library to find any part of the code, defined with any tag and even associated with specific attributes. As an example, we have the case of the “Space Group” property, whose information is defined with the <div> tag.
+For the searching part of the process, I mainly resorted to two methods: using the the ``Pandas`` library or the ``BeautifulSoup`` one.
+The first method uses the code ``pd.read_html`` and searches for all the HTML code of the page defined with the ``<table>`` tag (HTML tables), transforming the information taken from these tables into a ``Pandas DataFrame``.
+The second method turned out to be a bit more complex, however essential when the information of interest was not found within a ``<table>`` tag. Recurring to the code ``requests.get`` from ``requests`` library, it was obtained the entire HTML code of the page through an HTTP request to the web server. After that, it was possible to use the ``BeautifulSoup`` library to find any part of the code, defined with any tag and even associated with specific attributes. As an example, we have the case of the “Space Group” property, whose information is defined with the ``<div>`` tag.
 
 Figure 1
 
