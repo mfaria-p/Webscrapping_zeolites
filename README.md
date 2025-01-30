@@ -27,9 +27,12 @@ For the searching part of the process, I mainly resorted to two methods: using t
 The first method uses the code ``pd.read_html`` and searches for all the HTML code of the page defined with the ``<table>`` tag (HTML tables), transforming the information taken from these tables into a ``Pandas DataFrame``.
 The second method turned out to be a bit more complex, however essential when the information of interest was not found within a ``<table>`` tag. Recurring to the code ``requests.get`` from ``requests`` library, it was obtained the entire HTML code of the page through an HTTP request to the web server. After that, it was possible to use the ``BeautifulSoup`` library to find any part of the code, defined with any tag and even associated with specific attributes. As an example, we have the case of the “Space Group” property, whose information is defined with the ``<div>`` tag.
 
-Figure 1
+In the image below, it is possible to see a part of the database that was created, in Excel format, with some of the properties of interest.
 
-Figure 2
-In the first image (figure 1), it is possible to see a part of the database that was created, in Excel format, with some of the properties of interest.
-In the second image (figure 2), it is presented one of the tables referring to the list of T-atoms of a zeolite, also in Excel format. Visible in the lower part of the image, there is also a list of pages, each one corresponding to a different type of zeolite.
-In short, this internship allowed me to learn both the Python programming language, as well as HTML, while also learning to scrape data from multiple pages of the IZA website and concatenate them all into a single DataFrame.
+![tabela](https://github.com/user-attachments/assets/fa6b7131-b751-4e2c-92fc-6dad193d7aea)
+
+In the image below, it is presented one of the tables referring to the list of T-atoms of a zeolite, also in Excel format. Visible in the lower part of the image, there is also a list of pages, each one corresponding to a different type of zeolite.
+
+![atomos](https://github.com/user-attachments/assets/59392b20-e12b-457e-be43-993b9b563e40)
+
+In short, this project allowed me to learn both the Python programming language, as well as HTML, while also learning to scrape data from multiple pages of the IZA website and concatenate them all into a single DataFrame.
