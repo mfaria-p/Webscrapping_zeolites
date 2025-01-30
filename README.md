@@ -1,12 +1,12 @@
 # Webscrapping_zeolites
 
-As part of an **introduction and initiation research internship** at the Laboratory of Separation and Reaction Processes - Laboratory of Catalysis and Materials (LSRE-LCM), the goal of the proposed work was to **create a database that could be used in future techniques of Machine Learning**, based on a zeolite site of the IZA (International Zeolite Association) that contained the properties of interest.
+As part of an **introduction and initiation research internship** at the Laboratory of Separation and Reaction Processes - Laboratory of Catalysis and Materials (LSRE-LCM), the goal of the proposed work was to **create a database that could be used in future techniques of Machine Learning**, based on a zeolite site of the [IZA (International Zeolite Association)](https://www.iza-structure.org/databases/) that contained the properties of interest.
 
 To achieve this, it was necessary to use ``Python`` techniques, resorting mainly to ``Pandas`` library (essentially used for data manipulation and analysis), ``NumPy`` (when manipulating data through vectors), as well as ``BeautifulSoup`` and ``requests``. These last two libraries allowed me to find the information of interest within the HTML (programming language used to create the web pages), functioning as a tool to access and read the code. Further the work, there was also the necessity to resort to the ``openpyxl`` library, mainly for formatting (reading and writing) files in Excel, for advanced data processing.
 
 To carry out the work of taking the properties of interest, it was necessary research and elaboration of a search methodology within the site and the development of a Python routine in Google Collaboratory.
 
-Taking into account what was proposed, it was obtained a database that contains the following information:
+Taking into account what was proposed, it was obtained a database with 251 zeolites that contains the following information:
 - the Zeolite Types;
 - the Unit Cell Shape;
 - each Space Group;
