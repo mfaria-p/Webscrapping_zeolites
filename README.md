@@ -1,38 +1,73 @@
-# Webscrapping_zeolites
+# **Zeolites Web Scraping Project**
 
-As part of an **introduction and initiation research internship** at the Laboratory of Separation and Reaction Processes - Laboratory of Catalysis and Materials (LSRE-LCM), the goal of the proposed work was to **create a database that could be used in future techniques of Machine Learning**, based on a zeolite site of the [IZA (International Zeolite Association)](https://www.iza-structure.org/databases/) that contained the properties of interest.
+## 📌 **Overview**
+This project was developed as part of an **introduction and initiation research internship** at the Laboratory of Separation and Reaction Processes - Laboratory of Catalysis and Materials (LSRE-LCM). The primary objective was to create a comprehensive database for future **Machine Learning applications** by scraping data from the **[nternational Zeolite Association (IZA)](https://www.iza-structure.org/databases/)** website. This website contains various properties of zeolites, which were extracted and organized for further analysis.
 
-To achieve this, it was necessary to use ``Python`` techniques, resorting mainly to ``Pandas`` library (essentially used for data manipulation and analysis), ``NumPy`` (when manipulating data through vectors), as well as ``BeautifulSoup`` and ``requests``. These last two libraries allowed me to find the information of interest within the HTML (programming language used to create the web pages), functioning as a tool to access and read the code. Further the work, there was also the necessity to resort to the ``openpyxl`` library, mainly for formatting (reading and writing) files in Excel, for advanced data processing.
+---
 
-To carry out the work of taking the properties of interest, it was necessary research and elaboration of a search methodology within the site and the development of a Python routine in Google Collaboratory.
+## 🛠 **Tools and Libraries Used**
+To achieve the project's goals, the following **Python libraries** were utilized:
 
-Taking into account what was proposed, it was obtained a database with 251 zeolites that contains the following information:
-- the Zeolite Types;
-- the Unit Cell Shape;
-- each Space Group;
-- the lengths a, b and c;
-- the amplitudes α, β and γ;
-- the Framework Density;
-- their Ring Sizes;
-- the Channels dimensions;
-- Maximum diameter of a sphere, that can be included;
-- Maximum diameter of a sphere, that can diffuse along;
-- the Accessible Volume;
-- the Natural Tiling;
-- the Composite Building Units;
-- each Chemical Formula and a column for additional information, all that with the corresponding units.
-It was also created a database containing the list of T-atoms for each zeolite.
+- **Pandas**: For data manipulation and analysis, especially for reading HTML tables and converting them into DataFrames.
+- **NumPy**: For handling data through arrays.
+- **BeautifulSoup**: For parsing HTML and extracting the necessary information.
+- **Requests**: For making HTTP requests to fetch HTML content from web pages.
+- **Openpyxl**: For reading and writing Excel files, used for advanced data processing and formatting.
 
-For the searching part of the process, I mainly resorted to two methods: using the the ``Pandas`` library or the ``BeautifulSoup`` one.
-The first method uses the code ``pd.read_html`` and searches for all the HTML code of the page defined with the ``<table>`` tag (HTML tables), transforming the information taken from these tables into a ``Pandas DataFrame``.
-The second method turned out to be a bit more complex, however essential when the information of interest was not found within a ``<table>`` tag. Recurring to the code ``requests.get`` from ``requests`` library, it was obtained the entire HTML code of the page through an HTTP request to the web server. After that, it was possible to use the ``BeautifulSoup`` library to find any part of the code, defined with any tag and even associated with specific attributes. As an example, we have the case of the “Space Group” property, whose information is defined with the ``<div>`` tag.
+---
 
-In the image below, it is possible to see a part of the database that was created, in Excel format, with some of the properties of interest.
+## 🔍 **Methodology**
+The project involved researching and developing a methodology to search and extract the required properties from the **IZA website**. A Python routine was developed in **Google Collaboratory** to automate this process.
 
-![tabela](https://github.com/user-attachments/assets/fa6b7131-b751-4e2c-92fc-6dad193d7aea)
+### 📌 **Data Extraction Methods**
+1. **Using Pandas:**
+   - The `pd.read_html` function was used to search for HTML tables on the web page and convert them into Pandas DataFrames.
 
-In the image below, it is presented one of the tables referring to the list of T-atoms of a zeolite, also in Excel format. Visible in the lower part of the image, there is also a list of pages, each one corresponding to a different type of zeolite.
+2. **Using BeautifulSoup:**
+   - When the required information was not found within HTML tables, the `requests.get` function was used to fetch the entire HTML content of the page.
+   - BeautifulSoup was then used to parse the HTML and extract information from specific tags and attributes.
 
-![atomos](https://github.com/user-attachments/assets/59392b20-e12b-457e-be43-993b9b563e40)
+---
 
-In short, this project allowed me to learn both the Python programming language, as well as HTML, while also learning to scrape data from multiple pages of the IZA website and concatenate them all into a single DataFrame.
+## 📊 **Database Contents**
+The resulting database contains information on **251 zeolites**, including:
+
+- **Zeolite Types**
+- **Unit Cell Shape**
+- **Space Group**
+- **Lengths (a, b, c)**
+- **Angles (α, β, γ)**
+- **Framework Density**
+- **Ring Sizes**
+- **Channel Dimensions**
+- **Maximum Diameter of a Sphere (inclusion and diffusion)**
+- **Accessible Volume**
+- **Natural Tiling**
+- **Composite Building Units**
+- **Chemical Formula**
+
+Additionally, a separate database was created containing the list of **🧬 T-atoms** for each zeolite.
+
+---
+
+## 📂 **Example Outputs**
+Below are examples of the generated databases in **Excel format**:
+
+- **Zeolite Properties Table**
+
+![Zeolite Properties Table](https://github.com/user-attachments/assets/fa6b7131-b751-4e2c-92fc-6dad193d7aea)
+- **T-Atoms List**
+
+![T-Atoms List](https://github.com/user-attachments/assets/59392b20-e12b-457e-be43-993b9b563e40)
+
+---
+
+## ✅ **Conclusion**
+This project provided me valuable experience in **Python programming** and **HTML parsing**. It enabled the extraction and consolidation of data from multiple web pages into a single **DataFrame**, creating a useful resource for future **Machine Learning applications**.
+
+---
+
+### 🚀 **Future Improvements**
+- Enhancing data extraction techniques for better accuracy and completeness.
+- Expanding the database with additional properties and sources.
+- Developing **machine learning models** to analyze the extracted data.
