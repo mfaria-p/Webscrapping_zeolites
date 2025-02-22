@@ -1,7 +1,7 @@
 # **Zeolites Web Scraping Project**
 
 ## 📌 **Overview**
-This project was developed as part of an **introduction and initiation research internship** at the Laboratory of Separation and Reaction Processes - Laboratory of Catalysis and Materials (LSRE-LCM). The primary objective was to create a comprehensive database for future **Machine Learning applications** by scraping data from the **[nternational Zeolite Association (IZA)](https://www.iza-structure.org/databases/)** website. This website contains various properties of zeolites, which were extracted and organized for further analysis.
+This project was developed as part of an **introduction and initiation research internship** at the Laboratory of Separation and Reaction Processes - Laboratory of Catalysis and Materials (LSRE-LCM). The primary objective was to create a comprehensive database for future **Machine Learning applications** by scraping data from the **[International Zeolite Association (IZA)](https://www.iza-structure.org/databases/)** website. This website contains various properties of zeolites, which were extracted and organized for further analysis.
 
 ---
 
