@@ -2,6 +2,7 @@
 
 ## 📌 **Overview**
 This project was developed as part of an **introduction and initiation research internship** at the Laboratory of Separation and Reaction Processes - Laboratory of Catalysis and Materials (LSRE-LCM). The primary objective was to create a comprehensive database for future **Machine Learning applications** by scraping data from the **[International Zeolite Association (IZA)](https://www.iza-structure.org/databases/)** website. This website contains various properties of zeolites, which were extracted and organized for further analysis.
+The Python routine created gathers and processes data from HTML pages to extract relevant information about zeolites. It cleans and structures tabular data, retrieves specific text elements from web pages using BeautifulSoup, and formats extracted values for inclusion in a final dataframe. The code includes handling of missing values, string formatting, and HTTP requests to ensure accurate and structured data collection.
 
 ---
 
